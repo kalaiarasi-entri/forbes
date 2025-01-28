@@ -1,215 +1,212 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header Styles */
 .header {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
 }
 .header .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
 }
 .header a {
-    color: #fff;
-    text-decoration: none;
-    font-weight:normal;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
 }
 
-.header > a{
-    font-size: 28pt;
-    font-weight: bold;
-
+.header > a {
+  font-size: 28pt;
+  font-weight: bold;
 }
 .signin a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.head-text{
-    width:50%;
-    text-align: right;
-    text-decoration: none;
+.head-text {
+  width: 50%;
+  text-align: right;
+  text-decoration: none;
 }
 
 /* Newsletter Section */
-.newsletter-heading{
-    font-family: italic;
-    font-size: 4.5rem;
+.newsletter-heading {
+  font-family: italic;
+  font-size: 4.5rem;
 }
 
 .newsletter-section h1 {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
 .newsletter-section p {
-    font-size: 1rem;
-    line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .card-title {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
 .card-footer .btn {
-    font-weight: bold;
-    text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Form Styles */
 form .input-group-text {
-    background-color: #f8f9fa;
-    border-right: none;
+  background-color: #f8f9fa;
+  border-right: none;
 }
 .create-account-form .form-control {
-    border-left: none;
+  border-left: none;
 }
 button {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .circle-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white;
-    border: none;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
 
-  .circle-btn:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
+.circle-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
 
-  .preview{
-    width:25%;
+.preview {
+  width: 25%;
+}
 
-  }
+.card-footer a {
+  color: black;
+  font-size: 10pt;
+  margin-top: 5px;
+}
 
-  .card-footer a{
-   color:black;
-   font-size: 10pt;
-   margin-top: 5px;
-  }
+.icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa; /* Light background */
+}
 
-  .icon-container {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f8f9fa; /* Light background */
-  }
+.icon-container:hover {
+  background-color: #e9ecef; /* Slightly darker on hover */
+  cursor: pointer;
+}
 
-  .icon-container:hover {
-    background-color: #e9ecef; /* Slightly darker on hover */
-    cursor: pointer;
-  }
+.icon-container .bi {
+  font-size: 24px;
+  color: #6c757d; /* Gray color */
+}
 
-  .icon-container .bi {
-    font-size: 24px;
-    color: #6c757d; /* Gray color */
-  }
+.error {
+  color: red;
+  font-size: 0.9em;
+}
 
-  .error {
-    color: red;
-    font-size: 0.9em;
-  }
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
 
-  button:disabled {
-    background-color: gray;
-    cursor: not-allowed;
-  }
+.social-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #fff;
+  margin: 0;
+}
 
-  .social-button {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    background-color: #fff;
-    margin: 0; 
-  }
-  
-  .social-button:hover {
-    cursor: pointer;
-  }
-  
-  .icon {
-    width: 25px;
-    height: 25px;
-  }
+.social-button:hover {
+  cursor: pointer;
+}
 
-  #errorMessage{
-    color:red;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
+.icon {
+  width: 25px;
+  height: 25px;
+}
 
-  /* create account page */
-  .progress-bar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+#errorMessage {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* create account page */
+.progress-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .progress-bar-container span {
-    font-size: 12px;
-    font-weight: 600;
-    color: #555;
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
 }
 
 .head-progress.progress {
-    height: 8px;
-    background-color: #ddd;
-    border-radius: 50px;
-    overflow: hidden;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 50px;
+  overflow: hidden;
 }
 
 .head-progress.progress .progress-bar {
-    background: linear-gradient(to right, #007bff, #72c3ff);
+  background: linear-gradient(to right, #007bff, #72c3ff);
 }
 
-.pwd-circle{
-    color:rgb(196, 196, 196);;
-    font-size: 13pt;
-    font-weight: bolder;
+.pwd-circle {
+  color: rgb(196, 196, 196);
+  font-size: 13pt;
+  font-weight: bolder;
 }
 
-.pwd-des{
-    font-size: 11pt;
+.pwd-des {
+  font-size: 11pt;
 }
 
 /* password progress bar */
-.password-progress.progress{
-    background: none;
+.password-progress.progress {
+  background: none;
 }
 .password-progress .progress-bar {
-  margin-left:2%;
+  margin-left: 2%;
   height: 4px;
   /* background:rgb(196, 196, 196); */
   border-radius: 50px;
@@ -217,9 +214,8 @@ button {
   justify-content: space-between;
 }
 
-
-.form-control:focus{
-    box-shadow: none !important;
+.form-control:focus {
+  box-shadow: none !important;
 }
 
 .password-toggle {
@@ -237,12 +233,12 @@ button {
   color: #000;
 }
 
-.input-group>.form-control:focus + .password-toggle {
+.input-group > .form-control:focus + .password-toggle {
   z-index: 5;
 }
 
 /* account details page */
-.custom-input-height{
+.custom-input-height {
   height: 50px;
 }
 
@@ -258,21 +254,59 @@ button {
   pointer-events: none; /* Make sure the icon doesn't interfere with selection */
 }
 
-.account-details-form .form-input-label{
+.account-details-form .form-input-label {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   background-color: #fff;
-    border: 1px solid #737373;
-    border-radius: 0 !important;
-    height: 20px;
-    min-width: 20px;
-    }
+  border: 1px solid #737373;
+  border-radius: 0 !important;
+  height: 20px;
+  min-width: 20px;
+}
 
-.form-check label{
+.form-check label {
   font-size: 14px;
   padding-left: 8px;
+}
+
+/* Footer */
+.forbes-footer {
+  background: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #212529;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
