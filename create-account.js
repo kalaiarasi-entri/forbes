@@ -2,6 +2,8 @@
 const passwordInput = document.getElementById("password");
 const confirmPasswordInput = document.getElementById("confirmPassword");
 const emailInput = document.getElementById("email");
+
+// show progress bar based on conditions satisfied
 const progressBars = [
   document.getElementById("bar1"),
   document.getElementById("bar2"),
@@ -42,11 +44,12 @@ function fillProgressBarsSequentially(conditions) {
 
   progressBars.forEach((bar, index) => {
     if (index < satisfiedConditions) {
-      bar.classList.add("bg-success");
       bar.classList.remove("bg-secondary");
+      bar.style.border = "2px solid rgb(123, 203, 127)";
+
     } else {
       bar.classList.add("bg-secondary");
-      bar.classList.remove("bg-success");
+      bar.style.border = "none";
     }
   });
 }
