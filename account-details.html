@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Account</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="account-details.js" defer></script>
+  </head>
+  <body>
+    <div class="header d-flex justify-content-between align-items-center">
+      <a class="head-text" href="#" class="navbar-brand text-center">Forbes</a>
+    </div>
+    <div class="container d-flex flex-column align-items-center my-5">
+      <h2 class="text-start">Create an account</h2>
+      <form class="w-50 my-4 account-details-form" action="create-account.html">
+        <div class="progress-bar-container">
+          <span>EMAIL</span>
+          <span>PASSWORD</span>
+          <span>DETAILS</span>
+        </div>
+        <div class="head-progress progress mb-4">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 100%"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div class="mb-3">
+          <label for="firstname" class="form-label form-input-label"
+            >First Name</label
+          >
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control custom-input-height"
+              id="firstname"
+              placeholder="First Name"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="firstname" class="form-label form-input-label"
+            >Last Name</label
+          >
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control custom-input-height"
+              id="lastname"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="joblevel" class="form-label form-input-label"
+            >JOB LEVEL</label
+          >
+          <div class="input-group">
+            <select
+              class="form-control custom-input-height"
+              id="joblevel"
+            >
+              <option value="" disabled selected>Choose From List</option>
+              <option value="Suite">C-Suite</option>
+              <option value="Director">Director</option>
+              <option value="Entrepreneur">Entrepreneur</option>
+              <option value="Manager">Manager</option>
+              <option value="Student">Student</option>
+              <!-- Add more options as needed -->
+            </select>
+            <i class="bi bi-caret-down custom-select-icon"></i>
+          </div>
+        </div>
+        <!-- Add job function select option -->
+        <div class="mb-3">
+          <label for="joblevel" class="form-label form-input-label"
+            >JOB FUNCTION</label
+          >
+          <div class="input-group">
+            <select
+              class="form-control custom-input-height"
+              id="joblevel"
+            >
+              <option value="" disabled selected>Choose From List</option>
+              <option value="Suite">Building & Grounds Maintenance</option>
+              <option value="Director">Compliance, Governance, and Risk</option>
+              <option value="Entrepreneur">Consultant</option>
+              <option value="Manager">Creative</option>
+              <option value="Student">Diversity and Inclusion</option>
+              <option value="Manager">Education</option>
+              <option value="Manager">Engineering</option>
+            </select>
+            <i class="bi bi-caret-down custom-select-icon"></i>
+          </div>
+        </div>
+        <div class="form-check mb-3">
+          <input
+            class="form-check-input mr-2"
+            type="checkbox"
+            id="newsletter"
+          />
+          <label class="form-check-label ml-2" for="newsletter">
+            Sign me up to receive the Forbes Daily newsletter, personalized
+            content suggestions, and updates about Forbes.
+          </label>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="terms" required />
+          <label class="form-check-label" for="terms">
+            By creating an account, subscribing to emails, or signing in, you
+            accept and agree to our Terms of Service (including the class action
+            waiver and arbitration provisions), and you acknowledge our Privacy
+            Statement.*
+          </label>
+        </div>
+        <div class="form-checkmb3">
+          <p>
+            <a href="#">Terms of Service Privacy Statement</a>
+          </p>
+        </div>
+
+        <p class="text-muted">
+          Forbes is protected by reCAPTCHA, and the Google
+          <a href="#">Privacy Policy</a> and
+          <a href="#">Terms of Service</a> apply.
+        </p>
+        <button
+          type="submit"
+          id="submitButton"
+          class="btn btn-secondary w-100"
+        >
+          Continue
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
